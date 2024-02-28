@@ -79,7 +79,7 @@ async def doc(bot, update):
 
     ms = await update.message.edit("Tʀyɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅɪɴɢ....")    
     try:
-     	path = await bot.download_media(message=file, file_name=file_path, progress=progress_for_pyrogram,progress_args=("ɪʟʟᴇɢᴀʟ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....", ms, time.time()))                    
+     	path = await bot.download_media(message=file, file_name=file_path, progress=progress_for_pyrogram,progress_args=("Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....", ms, time.time()))                    
     except Exception as e:
      	return await ms.edit(e)
      	     
@@ -114,7 +114,7 @@ async def doc(bot, update):
          img.resize((320, 320))
          img.save(ph_path, "JPEG")
 
-    await ms.edit("ɪʟʟᴇɢᴀʟ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ Tʀyɪɴɢ Tᴏ Uᴩʟᴏᴀᴅɪɴɢ....")
+    await ms.edit("Tʀyɪɴɢ Tᴏ Uᴩʟᴏᴀᴅɪɴɢ....")
     type = update.data.split("_")[1]
     try:
         if type == "document":
